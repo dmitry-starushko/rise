@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="256" height="256" inkscape:version="1.4.3 (0d15f75042, 2025-12-25)" sodipodi:docname="joystick.svg" version="1.1" viewBox="0 0 67.733 67.733" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
+ <sodipodi:namedview bordercolor="#666666" borderopacity="1.0" inkscape:current-layer="svg3" inkscape:cx="127.84198" inkscape:cy="96.711111" inkscape:deskcolor="#d1d1d1" inkscape:pagecheckerboard="0" inkscape:pageopacity="0.0" inkscape:showpageshadow="2" inkscape:window-height="1011" inkscape:window-maximized="1" inkscape:window-width="1920" inkscape:window-x="0" inkscape:window-y="0" inkscape:zoom="3.1640625" pagecolor="#ffffff"/>
+ <g transform="matrix(1.0177 0 0 1.0177 -.60216 -.29743)">
+  <path d="m43.375 11.388a9.5075 9.5075 0 0 1-9.4941 9.5075 9.5075 9.5075 0 0 1-9.521-9.4806 9.5075 9.5075 0 0 1 9.4672-9.5344 9.5075 9.5075 0 0 1 9.5477 9.4536" stroke-width=".31691" vector-effect="non-scaling-stroke" style="-inkscape-stroke:hairline;paint-order:stroke fill markers"/>
+  <rect x="30.654" y="23.325" width="6.4267" height="20.153" stroke="#000" stroke-width="1.1335" style="paint-order:stroke fill markers"/>
+  <rect x=".59167" y="46.243" width="66.553" height="19.015" rx="11.738" ry="17.248" stroke="#000" stroke-width="1.181" style="paint-order:stroke fill markers"/>
+  <path d="m17.199 38.553a7.1306 4.8467 0 0 0-7.1004 4.8467h14.261v-0.02743a7.1306 4.8467 0 0 0-7.1608-4.8191z" stroke-linecap="round" stroke-width=".19596" vector-effect="non-scaling-stroke" style="-inkscape-stroke:hairline;paint-order:stroke fill markers"/>
+  <path d="m50.475 38.553a7.1306 4.8467 0 0 0-7.1004 4.8467h14.261v-0.02743a7.1306 4.8467 0 0 0-7.1608-4.8191z" stroke-linecap="round" stroke-width=".19596" vector-effect="non-scaling-stroke" style="-inkscape-stroke:hairline;paint-order:stroke fill markers"/>
+ </g>
+</svg>

@@ -1,0 +1,65 @@
+<RCC>
+    <qresource prefix="/svg/buttons">
+        <file>assets/svg/1.svg</file>
+        <file>assets/svg/2.svg</file>
+        <file>assets/svg/3.svg</file>
+        <file>assets/svg/4.svg</file>
+        <file>assets/svg/5.svg</file>
+        <file>assets/svg/6.svg</file>
+        <file>assets/svg/7.svg</file>
+        <file>assets/svg/8.svg</file>
+        <file>assets/svg/9.svg</file>
+        <file>assets/svg/0.svg</file>
+        <file>assets/svg/a.svg</file>
+        <file>assets/svg/b.svg</file>
+        <file>assets/svg/break.svg</file>
+        <file>assets/svg/c.svg</file>
+        <file>assets/svg/caps.svg</file>
+        <file>assets/svg/d.svg</file>
+        <file>assets/svg/e.svg</file>
+        <file>assets/svg/enter.svg</file>
+        <file>assets/svg/f.svg</file>
+        <file>assets/svg/g.svg</file>
+        <file>assets/svg/h.svg</file>
+        <file>assets/svg/i.svg</file>
+        <file>assets/svg/j.svg</file>
+        <file>assets/svg/k.svg</file>
+        <file>assets/svg/l.svg</file>
+        <file>assets/svg/m.svg</file>
+        <file>assets/svg/n.svg</file>
+        <file>assets/svg/o.svg</file>
+        <file>assets/svg/p.svg</file>
+        <file>assets/svg/q.svg</file>
+        <file>assets/svg/r.svg</file>
+        <file>assets/svg/s.svg</file>
+        <file>assets/svg/sym.svg</file>
+        <file>assets/svg/t.svg</file>
+        <file>assets/svg/u.svg</file>
+        <file>assets/svg/v.svg</file>
+        <file>assets/svg/w.svg</file>
+        <file>assets/svg/x.svg</file>
+        <file>assets/svg/y.svg</file>
+        <file>assets/svg/z.svg</file>
+    </qresource>
+    <qresource prefix="/svg/icons">
+        <file>assets/svg/joystick.svg</file>
+        <file>assets/svg/mouse.svg</file>
+        <file>assets/svg/open.svg</file>
+        <file>assets/svg/save.svg</file>
+        <file>assets/svg/restart.svg</file>
+        <file>assets/svg/scrshot.svg</file>
+        <file>assets/svg/pause.svg</file>
+        <file>assets/svg/devices.svg</file>
+        <file>assets/svg/zxmon.svg</file>
+        <file>assets/svg/play.svg</file>
+        <file>assets/svg/stop.svg</file>
+        <file>assets/svg/fast-forward.svg</file>
+        <file>assets/svg/rewind.svg</file>
+        <file>assets/svg/skip-backward.svg</file>
+        <file>assets/svg/eject.svg</file>
+        <file>assets/svg/quick.svg</file>
+    </qresource>
+    <qresource prefix="/svg/about">
+        <file>assets/svg/about.svg</file>
+    </qresource>
+</RCC>

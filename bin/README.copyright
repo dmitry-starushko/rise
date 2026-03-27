@@ -1,0 +1,11 @@
+Note that some files in this directory are _not_ covered by the GNU GPL.
+
+The following licenses apply:
+
+zx-spectrum-48.rom
+
+These are copyright Amstrad, who allow distribution of the ROMs but retain the copyright.
+You may not sell the ROMs or embed the ROMs in hardware, although it is allowed to sell
+a product which contains the ROMs, so long as the charge is being made for the product,
+not for the ROMs themselves.
+See <http://groups.google.com/group/comp.sys.amstrad.8bit/msg/c092cc4d4943131e> for more details.

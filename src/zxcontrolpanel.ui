@@ -1,0 +1,1563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ZxControlPanel</class>
+ <widget class="QTabWidget" name="ZxControlPanel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>756</width>
+    <height>351</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::FocusPolicy::NoFocus</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="currentIndex">
+   <number>0</number>
+  </property>
+  <widget class="QWidget" name="tabTape">
+   <attribute name="title">
+    <string>Tape</string>
+   </attribute>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTableView" name="tvTape"/>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QToolButton" name="tbQuickLoad">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="cobLoadCommand">
+         <property name="toolTip">
+          <string>Quick load type</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Program</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Code</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Screen</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Policy::Expanding</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>100</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QToolButton" name="tbPlay">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="tbStop">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="tbRewind">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="tbFastForward">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="tbRewindToStart">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="tbReset">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Policy::Expanding</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>100</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="cbxAPDS">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>110</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Automatic Polling Detection System</string>
+         </property>
+         <property name="text">
+          <string notr="true">APDS</string>
+         </property>
+         <property name="tristate">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="tabKeyboard">
+   <property name="styleSheet">
+    <string notr="true">background-color:black;</string>
+   </property>
+   <attribute name="title">
+    <string>Keyboard</string>
+   </attribute>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="5">
+     <widget class="QToolButton" name="kbH">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/h.svg</normaloff>:/svg/buttons/assets/svg/h.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QToolButton" name="kb1">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/1.svg</normaloff>:/svg/buttons/assets/svg/1.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QToolButton" name="kbA">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/a.svg</normaloff>:/svg/buttons/assets/svg/a.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="9">
+     <widget class="QToolButton" name="kbP">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/p.svg</normaloff>:/svg/buttons/assets/svg/p.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="QToolButton" name="kbG">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/g.svg</normaloff>:/svg/buttons/assets/svg/g.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="9">
+     <widget class="QToolButton" name="kbEnter">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/enter.svg</normaloff>:/svg/buttons/assets/svg/enter.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="5">
+     <widget class="QToolButton" name="kb6">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/6.svg</normaloff>:/svg/buttons/assets/svg/6.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="6">
+     <widget class="QToolButton" name="kbU">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/u.svg</normaloff>:/svg/buttons/assets/svg/u.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QToolButton" name="kbQ">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/q.svg</normaloff>:/svg/buttons/assets/svg/q.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QToolButton" name="kb4">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/4.svg</normaloff>:/svg/buttons/assets/svg/4.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="7">
+     <widget class="QToolButton" name="kbI">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/i.svg</normaloff>:/svg/buttons/assets/svg/i.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QToolButton" name="kbR">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/r.svg</normaloff>:/svg/buttons/assets/svg/r.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="8">
+     <widget class="QToolButton" name="kb9">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/9.svg</normaloff>:/svg/buttons/assets/svg/9.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QToolButton" name="kbF">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/f.svg</normaloff>:/svg/buttons/assets/svg/f.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="7">
+     <widget class="QToolButton" name="kbK">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/k.svg</normaloff>:/svg/buttons/assets/svg/k.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="5">
+     <widget class="QToolButton" name="kbY">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/y.svg</normaloff>:/svg/buttons/assets/svg/y.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="9">
+     <widget class="QToolButton" name="kb0">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/0.svg</normaloff>:/svg/buttons/assets/svg/0.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QToolButton" name="kbS">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/s.svg</normaloff>:/svg/buttons/assets/svg/s.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QToolButton" name="kbD">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/d.svg</normaloff>:/svg/buttons/assets/svg/d.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QToolButton" name="kb2">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/2.svg</normaloff>:/svg/buttons/assets/svg/2.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="6">
+     <widget class="QToolButton" name="kbJ">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/j.svg</normaloff>:/svg/buttons/assets/svg/j.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QToolButton" name="kbW">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/w.svg</normaloff>:/svg/buttons/assets/svg/w.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="8">
+     <widget class="QToolButton" name="kbL">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/l.svg</normaloff>:/svg/buttons/assets/svg/l.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QToolButton" name="kbT">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/t.svg</normaloff>:/svg/buttons/assets/svg/t.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="6">
+     <widget class="QToolButton" name="kb7">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/7.svg</normaloff>:/svg/buttons/assets/svg/7.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QToolButton" name="kb5">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/5.svg</normaloff>:/svg/buttons/assets/svg/5.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QToolButton" name="kbE">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/e.svg</normaloff>:/svg/buttons/assets/svg/e.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QToolButton" name="kb3">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/3.svg</normaloff>:/svg/buttons/assets/svg/3.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="8">
+     <widget class="QToolButton" name="kbO">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/o.svg</normaloff>:/svg/buttons/assets/svg/o.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="7">
+     <widget class="QToolButton" name="kb8">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/8.svg</normaloff>:/svg/buttons/assets/svg/8.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QToolButton" name="kbCaps">
+      <property name="toolTip">
+       <string>Right click to hold</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}
+QToolTip {background-color:#cccccc;color:black;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/caps.svg</normaloff>:/svg/buttons/assets/svg/caps.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QToolButton" name="kbZ">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/z.svg</normaloff>:/svg/buttons/assets/svg/z.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QToolButton" name="kbX">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/x.svg</normaloff>:/svg/buttons/assets/svg/x.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QToolButton" name="kbC">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/c.svg</normaloff>:/svg/buttons/assets/svg/c.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="4">
+     <widget class="QToolButton" name="kbV">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/v.svg</normaloff>:/svg/buttons/assets/svg/v.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="5">
+     <widget class="QToolButton" name="kbB">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/b.svg</normaloff>:/svg/buttons/assets/svg/b.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="6">
+     <widget class="QToolButton" name="kbN">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/n.svg</normaloff>:/svg/buttons/assets/svg/n.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="7">
+     <widget class="QToolButton" name="kbM">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/m.svg</normaloff>:/svg/buttons/assets/svg/m.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="8">
+     <widget class="QToolButton" name="kbSymbol">
+      <property name="toolTip">
+       <string>Right click to hold</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}
+QToolTip {background-color:#cccccc;color:black;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/sym.svg</normaloff>:/svg/buttons/assets/svg/sym.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="9">
+     <widget class="QToolButton" name="kbBreak">
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {background-color:#333333;}
+QToolButton:pressed {background-color:#4d4d4d;}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../rise.qrc">
+        <normaloff>:/svg/buttons/assets/svg/break.svg</normaloff>:/svg/buttons/assets/svg/break.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="tabSystem">
+   <attribute name="title">
+    <string>System</string>
+   </attribute>
+   <widget class="QGroupBox" name="gbActions">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>10</y>
+      <width>161</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Actions</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>141</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QToolButton" name="tbNMI">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tbRestoreROM">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="gbPerformance">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>201</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Performance</string>
+    </property>
+    <widget class="QSlider" name="slPerformance">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>181</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>10</number>
+     </property>
+     <property name="pageStep">
+      <number>2</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+     <property name="tickPosition">
+      <enum>QSlider::TickPosition::TicksBothSides</enum>
+     </property>
+     <property name="tickInterval">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbPerformance">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>181</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>×1</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>181</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Hooks</string>
+     </property>
+     <widget class="QSpinBox" name="sbxPerfOnTapeStart">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>30</y>
+        <width>51</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>10</number>
+      </property>
+      <property name="value">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cbPerfOnTapeStart">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>On tape start:</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cbPerfOnTapeStop">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>On tape stop:</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="sbxPerfOnTapeStop">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>60</y>
+        <width>51</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>10</number>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="tabAbout">
+   <attribute name="title">
+    <string>About</string>
+   </attribute>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>541</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../rise.qrc">:/svg/about/assets/svg/about.svg</pixmap>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Version 1.0.0&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;© &lt;/span&gt;&lt;span style=&quot; font-weight:700; color:#000000;&quot;&gt;Dmitry Starushko&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;, 2026&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Special thanks to &lt;/span&gt;&lt;span style=&quot; font-weight:700; color:#000000;&quot;&gt;Alexey Inozemtsev&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt; and &lt;/span&gt;&lt;span style=&quot; font-weight:700; color:#000000;&quot;&gt;Denis Kashirin&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700; color:#00007f;&quot;&gt;Enjoying RISE? &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700; color:#00007f;&quot;&gt;Support development, new features, and upcoming ZX Spectrum 128K support:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://boosty.to/rise_emulator&quot;&gt;&lt;span style=&quot; font-weight:700; text-decoration: underline; color:#1f9b5d;&quot;&gt;Boosty&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::TextFormat::MarkdownText</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actionTapePlayOn">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../rise.qrc">
+     <normaloff>:/svg/icons/assets/svg/play.svg</normaloff>:/svg/icons/assets/svg/play.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Play</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionTapePlayOff">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../rise.qrc">
+     <normaloff>:/svg/icons/assets/svg/stop.svg</normaloff>:/svg/icons/assets/svg/stop.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Stop</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionTapeRewind">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../rise.qrc">
+     <normaloff>:/svg/icons/assets/svg/rewind.svg</normaloff>:/svg/icons/assets/svg/rewind.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Rewind</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionTapeFastForward">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../rise.qrc">
+     <normaloff>:/svg/icons/assets/svg/fast-forward.svg</normaloff>:/svg/icons/assets/svg/fast-forward.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Fast forward</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionTapeRewindToOrigin">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../rise.qrc">
+     <normaloff>:/svg/icons/assets/svg/skip-backward.svg</normaloff>:/svg/icons/assets/svg/skip-backward.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Rewind to start</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionTapeReset">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../rise.qrc">
+     <normaloff>:/svg/icons/assets/svg/eject.svg</normaloff>:/svg/icons/assets/svg/eject.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Clear</string>
+   </property>
+   <property name="toolTip">
+    <string>Clear tape</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionNMI">
+   <property name="text">
+    <string>NMI</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionRestoreROM">
+   <property name="text">
+    <string>Restore ROM</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionQuickLoad">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../rise.qrc">
+     <normaloff>:/svg/icons/assets/svg/quick.svg</normaloff>:/svg/icons/assets/svg/quick.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Quick</string>
+   </property>
+   <property name="toolTip">
+    <string>Quick load</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../rise.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionTapePlayOn</sender>
+   <signal>triggered()</signal>
+   <receiver>ZxControlPanel</receiver>
+   <slot>slotTapePlayOn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>208</x>
+     <y>201</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionTapePlayOff</sender>
+   <signal>triggered()</signal>
+   <receiver>ZxControlPanel</receiver>
+   <slot>slotTapePlayOff()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>324</x>
+     <y>175</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionTapeRewind</sender>
+   <signal>triggered()</signal>
+   <receiver>ZxControlPanel</receiver>
+   <slot>slotTapeRewind()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>324</x>
+     <y>175</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionTapeFastForward</sender>
+   <signal>triggered()</signal>
+   <receiver>ZxControlPanel</receiver>
+   <slot>slotTapeFastForward()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>324</x>
+     <y>175</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionTapeRewindToOrigin</sender>
+   <signal>triggered()</signal>
+   <receiver>ZxControlPanel</receiver>
+   <slot>slotTapeRewindToOrigin()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>324</x>
+     <y>175</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionTapeReset</sender>
+   <signal>triggered()</signal>
+   <receiver>ZxControlPanel</receiver>
+   <slot>slotTapeReset()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>324</x>
+     <y>175</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionNMI</sender>
+   <signal>triggered()</signal>
+   <receiver>ZxControlPanel</receiver>
+   <slot>slotNMI()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>132</x>
+     <y>91</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionRestoreROM</sender>
+   <signal>triggered()</signal>
+   <receiver>ZxControlPanel</receiver>
+   <slot>slotRestoreROM()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>62</x>
+     <y>318</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionQuickLoad</sender>
+   <signal>triggered()</signal>
+   <receiver>ZxControlPanel</receiver>
+   <slot>slotQuickLoad()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>192</x>
+     <y>225</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slotTapePlayOn()</slot>
+  <slot>slotTapePlayOff()</slot>
+  <slot>slotTapeRewind()</slot>
+  <slot>slotTapeFastForward()</slot>
+  <slot>slotTapeRewindToOrigin()</slot>
+  <slot>slotTapeReset()</slot>
+  <slot>slotNMI()</slot>
+  <slot>slotRestoreROM()</slot>
+  <slot>slotQuickLoad()</slot>
+ </slots>
+</ui>
