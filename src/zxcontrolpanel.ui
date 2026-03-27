@@ -1241,7 +1241,7 @@ QToolButton:pressed {background-color:#4d4d4d;}</string>
      <rect>
       <x>20</x>
       <y>20</y>
-      <width>541</width>
+      <width>691</width>
       <height>241</height>
      </rect>
     </property>
