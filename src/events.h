@@ -150,7 +150,7 @@ class handler {
     INLINE
     void bus_connect() noexcept {
         T *self = static_cast<T *>(this);
-        default_bus<e>::connect(self, [self] (data<e> &ed) {
+        default_bus<e>::connect(self, [self] INLINE (data<e> &ed) noexcept(noexcept(self->handle)) {
             self->handle(ed);
         });
     }
